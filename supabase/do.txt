@@ -1,0 +1,5 @@
+cd /opt/supabase/supabase/docker
+claude --resume b8f93c17-c381-4fcc-814b-02736b8523e1     
+
+cd mobile/app
+flutter run -d chrome

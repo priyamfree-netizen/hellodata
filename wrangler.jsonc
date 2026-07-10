@@ -1,0 +1,39 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "tanstack-start-app",
+  "compatibility_date": "2025-09-24",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "src/server.ts",
+
+  // Secrets — set with: wrangler secret put <KEY>
+  // Do NOT commit real values here.
+  //
+  // Required secrets:
+  //   SUPABASE_JWT_SECRET      - Supabase project JWT secret (no VITE_ prefix)
+  //   JWT_SECRET is deprecated and will not work for Supabase REST/RLS tokens.
+  //   TOTP_ENCRYPTION_KEY      — random 32+ byte string (openssl rand -hex 32)
+  //   SUPABASE_SERVICE_ROLE_KEY — from Supabase project settings
+  //   SMTP_HOST                — e.g. smtp.resend.com
+  //   SMTP_PORT                — e.g. 465
+  //   SMTP_USER                — e.g. resend
+  //   SMTP_PASS                — SMTP password / API key
+  //   SMTP_FROM                — e.g. BillSOS <noreply@yourdomain.com>
+  //   SMTP_REPLY_TO            — optional support reply-to address
+  //   SMTP_SECURE              — auto, true/ssl, or false/plain
+  //   GOOGLE_CLIENT_ID         — OAuth app client ID
+  //   GOOGLE_CLIENT_SECRET     — OAuth app client secret
+  //   GITHUB_CLIENT_ID         — OAuth app client ID
+  //   GITHUB_CLIENT_SECRET     — OAuth app client secret
+  //
+  // Razorpay (optional — can also be set via Admin → Payment Gateway UI):
+  //   These are stored in admin_settings and managed via the UI; no wrangler
+  //   secrets needed unless you prefer to inject them at deploy time.
+  //
+  // Public vars (safe to put in [vars] block below):
+  //   VITE_SUPABASE_URL        — e.g. https://xxxx.supabase.co
+  //   VITE_APP_URL             — e.g. https://app.billsos.com (no trailing slash)
+
+  "vars": {
+    "VITE_APP_URL": "http://localhost:8080",
+  },
+}

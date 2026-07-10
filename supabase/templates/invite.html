@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You've been invited to HelloData</title>
+</head>
+<body style="margin:0;padding:0;background-color:#F1F5F9;font-family:'Segoe UI',Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#F1F5F9;padding:40px 16px;">
+    <tr>
+      <td align="center">
+        <table width="560" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;max-width:560px;">
+
+          <!-- Logo bar -->
+          <tr>
+            <td align="center" style="padding-bottom:24px;">
+              <table cellpadding="0" cellspacing="0" role="presentation">
+                <tr>
+                  <td style="background:#2563EB;width:40px;height:40px;border-radius:10px;text-align:center;vertical-align:middle;font-size:20px;font-weight:700;color:#FFFFFF;line-height:40px;">B</td>
+                  <td style="padding-left:10px;font-size:20px;font-weight:700;color:#0F172A;vertical-align:middle;">HelloData</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Card -->
+          <tr>
+            <td style="background:#FFFFFF;border-radius:16px;padding:48px 40px;box-shadow:0 1px 4px rgba(0,0,0,0.08);">
+
+              <!-- Icon -->
+              <div style="width:56px;height:56px;background:#EFF6FF;border-radius:14px;margin:0 auto 24px;text-align:center;line-height:56px;font-size:28px;">🤝</div>
+
+              <h1 style="margin:0 0 8px;font-size:22px;font-weight:700;color:#0F172A;text-align:center;">You're invited to HelloData</h1>
+              <p style="margin:0 0 32px;font-size:15px;color:#64748B;text-align:center;line-height:1.6;">
+                A teammate has invited you to collaborate on HelloData — the AI-powered platform for financial document automation. Accept your invitation to get started.
+              </p>
+
+              <!-- Feature highlights -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom:32px;">
+                <tr>
+                  <td style="background:#F8FAFC;border-radius:12px;padding:20px 24px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                      <tr>
+                        <td style="padding-bottom:12px;">
+                          <span style="font-size:16px;">📄</span>
+                          <span style="font-size:14px;color:#374151;font-weight:500;padding-left:10px;">Upload invoices, GST returns &amp; bank statements</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-bottom:12px;">
+                          <span style="font-size:16px;">🤖</span>
+                          <span style="font-size:14px;color:#374151;font-weight:500;padding-left:10px;">AI extracts structured data automatically</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span style="font-size:16px;">📊</span>
+                          <span style="font-size:14px;color:#374151;font-weight:500;padding-left:10px;">Export clean data ready for your workflow</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- CTA button -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                <tr>
+                  <td align="center" style="padding-bottom:32px;">
+                    <a href="{{ .ConfirmationURL }}"
+                       style="display:inline-block;background:#2563EB;color:#FFFFFF;font-size:15px;font-weight:600;text-decoration:none;padding:14px 36px;border-radius:10px;letter-spacing:0.01em;">
+                      Accept invitation
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <hr style="border:none;border-top:1px solid #E2E8F0;margin:0 0 24px;" />
+
+              <p style="margin:0 0 8px;font-size:13px;color:#94A3B8;text-align:center;">
+                This invitation expires in <strong style="color:#64748B;">7 days</strong>. If you weren't expecting this, you can safely ignore it.
+              </p>
+              <p style="margin:0;font-size:12px;color:#CBD5E1;text-align:center;word-break:break-all;">
+                Or copy this link: <a href="{{ .ConfirmationURL }}" style="color:#2563EB;">{{ .ConfirmationURL }}</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding-top:24px;text-align:center;">
+              <p style="margin:0 0 4px;font-size:12px;color:#94A3B8;">HelloData · AI financial document automation</p>
+              <p style="margin:0;font-size:12px;color:#CBD5E1;">
+                <a href="{{ .SiteURL }}/privacy" style="color:#94A3B8;text-decoration:none;">Privacy Policy</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
